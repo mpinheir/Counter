@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Counter</string>
-    <string name="i_am_alive">I am alive</string>
+    <string name="i_am_alive">0</string>
 </resources>

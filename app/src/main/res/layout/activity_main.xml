@@ -12,39 +12,47 @@
         android:layout_height="wrap_content"
         android:text="@string/i_am_alive"
         android:textColor="@android:color/darker_gray"
-        android:textSize="30sp"
+        android:textSize="72sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.42000002" />
+        app:layout_constraintVertical_bias="0.258" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/toast_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Button"
+        android:onClick="incrementa"
+        android:text="Add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintHorizontal_bias="0.231"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.244" />
+        app:layout_constraintVertical_bias="0.311" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="Button"
+        android:layout_marginTop="8dp"
+        android:onClick="decrementa"
+        android:text="Subtract"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        tools:layout_editor_absoluteY="349dp" />
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toEndOf="@+id/toast_button"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.308" />
 
 </android.support.constraint.ConstraintLayout>
