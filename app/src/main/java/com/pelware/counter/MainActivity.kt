@@ -35,12 +35,27 @@ class MainActivity : AppCompatActivity() {
         // Get the value of the text view.
         val countString = showCountTextView.text.toString()
 
-        // Convert value to a number and increment it
+        // Decrements counter value if counter > 0
         var count: Int = Integer.parseInt(countString)
-        count--
+
+        if (count > 0){
+            count--
+        }
+
 
         // Display the new value in the text view.
         showCountTextView.text = count.toString();
+    }
+
+    fun reset (view: View) {
+        // Get the text view
+        val showCountTextView= findViewById<TextView>(R.id.textView)
+
+        // Get the value of the text view.
+        val countString = showCountTextView.text.toString()
+
+        // Display the new value in the text view.
+        showCountTextView.text = 0.toString();
     }
 
 }
